@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    body {
+      background-color: hsl(212, 45%, 89%);
+      display: grid;
+      place-content: center;
+    }
+
+    .card {
+      margin-block-start: 3rem;
+      writing-mode: vertical-rl;
+      background-color: aliceblue;
+      min-inline-size: 320px;
+      inline-size: 320px;
+      writing-mode: horizontal-tb;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 1.5rem;
+      text-align: center;
+
+    }
+
+    .outfit-title {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+      inline-size: 320px;
+    }
+
+    .outfit-text {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      color: rgb(187, 187, 187);
+      inline-size: 320px;
+    }
+
+    .image-card {
+      width: inherit;
+    }
+
+    img {
+      inline-size: 100%;
+      border-radius: 0.7rem;
+    }
+
+    .attribution {
+      position: fixed;
+      bottom: 1rem;
+      right: 0;
+      left: 0;
+      font-size: 11px;
+      text-align: center;
+
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <figure class="image-card">
+      <img src="./images/image-qr-code.png" alt="QR">
+    </figure>
+    <div class="card-content-title">
+      <h2 class="outfit-title">Improve your front-end skills by building projects</h2>
+    </div>
+    <div class="card-content-text">
+      <p class="outfit-text">Scan the QR code to visit Frontend Mentor and take coding skills to the netx level</p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Darwin Junior Mendoza</a>.
+  </div>
+</body>
+</html>
